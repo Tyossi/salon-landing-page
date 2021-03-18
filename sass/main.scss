@@ -5,61 +5,40 @@
 * {
     margin: 0;
     padding: 0; }
-  
-  // html {
-  //   font-size: 62.5%; 
-   
-  // }
-  
+
 
   
   .header {
     background-image:  linear-gradient(to left top, rgba(128, 128, 128, 0), rgb(0, 0, 0)), url("../img/salon.jpg");
     background-size: cover;
     background-position: top;
-    position: relative;
     height: 100vh; 
+    display: flex;
+    flex-direction: column;
 
     @include respond(tab-port){
-      height: 69vh;
+      height: 100vh;
     }
     @include respond(phone){
-      height: 46vh;
+      height: 65vh;
     }
   
     max-width: 100%;
   }
    
-   
-  .header__logo-box {
-      display: flex;
-      justify-content: flex-end;
-   
-    
-    }
      
-     
-  .logo-box__logo {
-    background-color: #8b2b2b;
-        flex: 0 0 5%;
-        width: 2rem;
-        height: 2rem;
-        padding: 2rem; 
-        margin: 1rem;
-        text-align: center;
-      
-    }
   
-    .header__nav-container {
+  .header__nav-container {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 0 0 4rem 2rem;
+      font-size: 2.5rem;
+      height: 50vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-right: 0 0 4rem 2rem;
-      height: 20rem;
       align-items: flex-start;
-      font-size: 3rem;
-      color: #fff; 
-      
+       animation: moveInTop 1s ease-out;
     }
   
   .nav__text--one{
@@ -67,9 +46,7 @@
     margin: 2rem;
     width: 2rem;
     margin-bottom: 6rem;
-    
-    
-    
+    animation: moveInTop 1s ease-out  ;
   }
   
   .nav__text--two{
@@ -77,53 +54,60 @@
     margin: 2rem;
     width: 2rem;
     margin-bottom: 6rem;
-    
+    animation: moveInTop 1s ease-out  ;
   }
   
-  .nav__text--three{
+.nav__text--three{
     flex: 0 0 30%;
     margin: 2rem;
     width: 2rem;
     margin-bottom: 6rem;
-    
+    animation: moveInTop 1s ease-out  ;
+  }
+
+.nav__text--four{
+    flex: 0 0 30%;
+    margin: 2rem;
+    width: 2rem;
+    margin-bottom: 6rem;
+    animation: moveInTop 1s ease-out  ;
+  }
+
+  @keyframes moveInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+
+    90% {
+      opacity: 1;
+      transform: translateY(-2rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   
-   /* @keyframes movieInTop {
-    0%{
-      opacity: 1;
-      transform: translateY(10rem);
-    }
-  
-    80%{
-      opacity: 1;
-    }
-  
-    100%{
-      opacity: 1;
-    }
-  }      */
-  
-  /* @keyframes moveInBottom {
-    0% {
-      transform: translateY(3rem); 
-      opacity: 1;
-    }
-  
-    80%{
-      opacity: 1;
-    }
-  
-    100%{
-      opacity: 1;
-    }
-  } */
-  
-  .header__text-box {
+.header__text-box {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-top: 7rem;
+
     align-items: center;
     font-size:60%;
     color: #fff;
@@ -131,52 +115,47 @@
     
   }
    
-  .main-text{ 
+.main-text{ 
     flex: 0 0 20%;
     margin: 0 0 .5rem 3.5rem;
     letter-spacing: 2rem;
     backface-visibility: hidden;
-    // animation-name: moveInTop;
-    /* animation-duration: 8s; */
-    // transition: 4s;
-    backface-visibility: hidden;
     font-size: 7.5rem;
+    animation: moveInTop 1s ease-out  ;
+    
     @include respond(tab-port){
       font-size: 5.5rem;
     }
   }
-  
-  .sub-text {
+
+.sub-text {
     font-size: 4rem;
+    animation: moveInTop 1s ease-out;
+    margin-bottom: 7rem;
+
     @include respond(tab-port){
       font-size: 2.5rem;
     }
-    margin-bottom: 10rem;
-    animation-name: moveInTop;
-    /* animation-duration: 8s; */
-    transition: 4s;
-    backface-visibility: hidden;
   }
   
-  .btn{
+.btn{
     border-radius: 1rem;
     cursor: pointer;
     border: none;
     width: 20rem;
     height: 5.5rem;
     font-size: 4rem;
-    @include respond(tab-port){
+    outline: none;
+    color: rgb(241, 234, 234);
+    background-color: #8b2b2b;
+    box-shadow: rgb(32, 32, 32) 0 0.5rem 4rem 0.2rem;
+    animation: moveInBottom 1.5s ease-out;
+   
+      @include respond(tab-port){
       width: 15rem;
       height: 3.5rem;
       font-size: 3rem;
     }
-    outline: none;
-    color: rgb(241, 234, 234);
-    background-color: #8b2b2b;
-    box-shadow: rgb(0, 0, 0) 0 0.5rem 4rem 0.2rem;
-   
-    
-    /* text-align: center; */ 
   }
   
   .btn:hover{
@@ -191,18 +170,16 @@
   }
   
   .btn-animated{
-    animation-name: moveInBottom;
-    animation-duration: 5s; 
-    transition: all .3s;
+        transition: all .3s;
   }
   
-  a{
+  .nav-link{  
     text-decoration: none;  
     color: #fff;
     
   }
   
-  a:hover{
+  .nav-link:hover{
     color: #8b2b2b;
   }
   
@@ -210,12 +187,12 @@
     position: relative;
   }
   
-  a::before {
+  .nav-link::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    height: 90%;
+    height: 100%;
     width: .3rem;
     background-color: #8b2b2b;
     margin-bottom: .5rem;
@@ -225,7 +202,6 @@
   .about__section{
     height: 100vh;
     background-image: linear-gradient(to right,black, #A54141);
-    /* position: relative; */
     padding: 3rem;
 
     @include respond(tab-port){
@@ -237,7 +213,6 @@
   
   .about__container {
     background-image: linear-gradient(to bottom, #FEFCFC, #fefcfc91), url(../img/salon1.jpg);
-    /* background-color: #FEFCFC; */
     height: auto;
     @include respond(tab-port){
       height: 147rem;
@@ -248,7 +223,6 @@
     flex-direction: column;
     background-size: cover;
     background-position: top;
-    // max-width: 100%;
     
   }
   
@@ -306,10 +280,6 @@
     margin: 2rem;
     border-radius: 2rem;
     text-align: center;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; */
   }
   
   .card-one__text{
@@ -400,7 +370,6 @@
     font-size: 1.7rem;
     margin-bottom: 3rem;
     color: #A54141;
-    // border-bottom: solid #a54141a9;
     border-width: 10%;
     padding-bottom: 2rem;
   }
@@ -411,7 +380,6 @@
     margin-bottom: 3rem;
     color: #A54141;
     font-style: italic;
-    // border-bottom: solid #a54141a9;
     border-width: 10%;
     padding-bottom: 2rem;
     
@@ -423,7 +391,6 @@
     margin-bottom: 3rem;
     color: #A54141;
     font-style: italic;
-    /* border-bottom: solid #a54141a9; */
     padding-bottom: 2rem;
   }
   
@@ -433,7 +400,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* align-items: center; */
     position: relative;
     
     &__heading{
@@ -550,7 +516,70 @@
       position: absolute;
       margin-bottom: 5rem;
     } 
-  
+
+    .footer{
+      height: 45vh;
+      background-image: linear-gradient(to right,black, #A54141);
+      padding: 2rem;
+    
+      &__container{
+          background-color: #24141C;
+          height: 45vh;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+
+          &--logo {  
+               flex: 0 0 20%;
+            height: 4rem;
+          }
+
+          &--text-content {
+            flex: 0 0 50%;
+            height: 7rem;
+            padding: 1rem 1.5rem 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+
+            &__links{ 
+              padding: 1.5rem;
+              display: flex;
+              justify-content: space-between;
+              border-top: solid rgba(255, 235, 205, 0.39);
+              border-width: thin;
+              flex: 0 0 40%;
+              text-align: center;
+              font-size: 2rem;  
+              color:black;
+            }
+
+            &__citation{
+              flex: 0 0 40%;  
+              padding: 2rem;
+              border-top: solid rgba(255, 235, 205, 0.39);
+              border-width: thin;
+              text-align: center;
+              font-size: 2rem;    
+              color: rgb(241, 234, 234);
+            }   
+          }
+      }
+    }
+
+    .link{
+       text-decoration: none;
+       color: rgb(241, 234, 234);
+       padding: 1rem;
+    } 
+
+    .link:hover{   
+        transform: skew(2deg, 3deg);
+        background-color: #AA2B33;
+        border-radius: 1rem;
+    }  
+
+
 
 
  
