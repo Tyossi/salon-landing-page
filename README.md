@@ -1,4 +1,4 @@
-# hairWays barbing salom
+# hairWays barbing salon
 A landing page for a fictitious barbing salon business.
 
 https://hairwayslandingpage.netlify.app/
