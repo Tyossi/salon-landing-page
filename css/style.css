@@ -494,7 +494,8 @@ body {
   background-color: #24141c;
   color: #aa2b33;
   border: solid #aa2b33;
-  border-width: thin; }
+  border-width: thin;
+  cursor: pointer; }
 
 .premium__sub-card {
   color: antiquewhite;
@@ -542,7 +543,8 @@ body {
   width: 79%;
   background-color: #aa2b33;
   color: #fff;
-  border: none; }
+  border: none;
+  cursor: pointer; }
   @media only screen and (max-width: 24.44em) {
     .CTA__try-it {
       flex: 0 0 14%;

@@ -589,6 +589,7 @@
   color: #aa2b33;
   border: solid #aa2b33;
   border-width: thin;
+  cursor: pointer;
 }
 
 .premium__sub-card {
@@ -647,6 +648,7 @@
   background-color: #aa2b33;
   color: #fff;
   border: none;
+  cursor: pointer;
 
   @media only screen and (max-width: 24.44em) {
     flex: 0 0 14%;
