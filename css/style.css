@@ -22,7 +22,7 @@ body {
   padding: 0; }
 
 .header {
-  background-image: linear-gradient(to left top, rgba(128, 128, 128, 0), black), url("../img/salon.jpg");
+  background-image: linear-gradient(to left top, rgba(128, 128, 128, 0), black), url("../img/salonone.jpg");
   background-size: cover;
   background-position: top;
   height: 100vh;
@@ -105,7 +105,7 @@ body {
 
 .main-text {
   flex: 0 0 20%;
-  margin: 0 0 .5rem 3.5rem;
+  margin: 0 0 0.5rem 3.5rem;
   letter-spacing: 2rem;
   backface-visibility: hidden;
   font-size: 7.5rem;
@@ -164,7 +164,7 @@ body {
   box-shadow: black 0 1rem 3rem 0.1rem; }
 
 .btn-animated {
-  transition: all .3s; }
+  transition: all 0.3s; }
 
 .nav-link {
   text-decoration: none;
@@ -182,13 +182,13 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  width: .3rem;
+  width: 0.3rem;
   background-color: #8b2b2b;
-  margin-bottom: .5rem; }
+  margin-bottom: 0.5rem; }
 
 .about__section {
   height: 100vh;
-  background-image: linear-gradient(to right, black, #A54141);
+  background-image: linear-gradient(to right, black, #a54141);
   padding: 3rem;
   display: flex; }
   @media only screen and (max-width: 64em) {
@@ -199,7 +199,7 @@ body {
       height: 147rem; } }
 
 .about__container {
-  background-image: linear-gradient(to bottom, #FEFCFC, #fefcfc91), url(../img/salon1.jpg);
+  background-image: linear-gradient(to bottom, #fefcfc, #fefcfc91), url(../img/salon1.jpg);
   height: auto;
   flex: 0 1 100%;
   border-radius: 2rem;
@@ -222,7 +222,7 @@ body {
   height: 11rem;
   border: none;
   padding-top: 3rem;
-  background-image: linear-gradient(to bottom, #FEFCFC, #A54141);
+  background-image: linear-gradient(to bottom, #fefcfc, #a54141);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent; }
@@ -283,7 +283,7 @@ body {
       padding-bottom: 2rem; } }
 
 .card-one__text {
-  color: #A54141;
+  color: #a54141;
   font-size: 2rem;
   font-weight: bold; }
   @media only screen and (max-width: 25.69em) {
@@ -315,7 +315,7 @@ body {
       padding-bottom: 2rem; } }
 
 .card-two__text {
-  color: #A54141;
+  color: #a54141;
   font-size: 2rem;
   font-weight: bold; }
   @media only screen and (max-width: 25.69em) {
@@ -346,7 +346,7 @@ body {
       padding-bottom: 2rem; } }
 
 .card-three__text {
-  color: #A54141;
+  color: #a54141;
   font-size: 2rem;
   font-weight: bold; }
   @media only screen and (max-width: 25.69em) {
@@ -354,25 +354,25 @@ body {
       font-size: 2.5rem; } }
 
 .grow {
-  transition: all .3s; }
+  transition: all 0.3s; }
 
 .grow:hover {
   transform: scale(1.1); }
 
 .guaranteed-icon {
-  fill: #A54141;
+  fill: #a54141;
   width: 7rem;
   height: 7rem;
-  margin: 2rem .5rem 3rem 0; }
+  margin: 2rem 0.5rem 3rem 0; }
 
 .hairstyle {
   height: 8rem;
   width: 8rem;
-  margin: 2rem .5rem 3rem 0; }
+  margin: 2rem 0.5rem 3rem 0; }
 
 .star {
-  fill: #A54141;
-  margin: 4rem .5rem 6rem 0; }
+  fill: #a54141;
+  margin: 4rem 0.5rem 6rem 0; }
 
 .stars {
   flex: 1; }
@@ -381,7 +381,7 @@ body {
   font-weight: 800;
   font-size: 1.7rem;
   margin-bottom: 3rem;
-  color: #A54141;
+  color: #a54141;
   border-width: 10%;
   padding-bottom: 2rem; }
 
@@ -389,7 +389,7 @@ body {
   font-weight: 800;
   font-size: 1.7rem;
   margin-bottom: 3rem;
-  color: #A54141;
+  color: #a54141;
   font-style: italic;
   border-width: 10%;
   padding-bottom: 2rem; }
@@ -398,13 +398,13 @@ body {
   font-weight: 800;
   font-size: 1.7rem;
   margin-bottom: 3rem;
-  color: #A54141;
+  color: #a54141;
   font-style: italic;
   padding-bottom: 2rem; }
 
 .membership-subs {
   height: 100vh;
-  background-color: #AA2B33;
+  background-color: #aa2b33;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -424,7 +424,7 @@ body {
 .membersip__card-container {
   height: 71%;
   width: 56%;
-  background-color: #24141C;
+  background-color: #24141c;
   position: absolute;
   align-self: center;
   z-index: 1;
@@ -491,9 +491,9 @@ body {
 .CTA__start-now {
   flex: 0 0 14%;
   width: 63%;
-  background-color: #24141C;
-  color: #AA2B33;
-  border: solid #AA2B33;
+  background-color: #24141c;
+  color: #aa2b33;
+  border: solid #aa2b33;
   border-width: thin; }
 
 .premium__sub-card {
@@ -540,7 +540,7 @@ body {
 .CTA__try-it {
   flex: 0 0 14%;
   width: 79%;
-  background-color: #AA2B33;
+  background-color: #aa2b33;
   color: #fff;
   border: none; }
   @media only screen and (max-width: 24.44em) {
@@ -572,13 +572,13 @@ body {
 
 .footer {
   height: 40vh;
-  background-image: linear-gradient(to right, black, #A54141);
+  background-image: linear-gradient(to right, black, #a54141);
   padding: 2rem; }
   @media only screen and (max-width: 37.5em) {
     .footer {
       height: 30vh; } }
   .footer__container {
-    background-color: #24141C;
+    background-color: #24141c;
     height: 40vh;
     width: 100%;
     display: flex;
@@ -643,5 +643,5 @@ body {
 
 .link:hover {
   transform: skew(2deg, 3deg);
-  background-color: #AA2B33;
+  background-color: #aa2b33;
   border-radius: 1rem; }
